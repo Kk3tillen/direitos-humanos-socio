@@ -17,7 +17,7 @@ header {
   height: 88vh;
   display: grid;
   place-items: center;
-  background-image: url("https://portal.unicap.br/documents/475032/568176/Direitos+humanos+mascaras.jpg/ad8ae234-72eb-c060-c901-55c0d1df1e2d?t=1608121467328");
+  background-image: url("https://expresso.estadao.com.br/wp-content/uploads/2021/09/direitos-humanos-diversidade-getty.jpg");
 
 }
 header > section{
@@ -42,7 +42,9 @@ nav {
   justify-content: center;
   align-items: center;
   gap: 100px;
+  border-bottom: 2px solid #af76ff;
 }
+
 a{
   color: currentColor;
   text-decoration: none;
@@ -98,8 +100,9 @@ li{
 
 section > p {
   padding: 0 10rem;
-  text-align: justify;
+  font-size: 20px;
   text-justify: inter-word;
+  letter-spacing: 1px;
 }
 
 
