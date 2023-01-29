@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:ital,wght@0,300;0,500;1,800&family=Righteous&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(78, 7, 46);
+  font-family: 'Righteous', cursive;
+  color: rgb(255, 255, 255);
+}
+
+header {
+  height: 88vh;
+  display: grid;
+  place-items: center;
+  background-image: url("https://portal.unicap.br/documents/475032/568176/Direitos+humanos+mascaras.jpg/ad8ae234-72eb-c060-c901-55c0d1df1e2d?t=1608121467328");
+
+}
+header > section{
+  height: 100%;
+  width: 100%;
+  background-color: #1b1a1a69;
+  display: grid;
+  place-items: center;
+}
+
+h1 {
+  font-size: 100px;
+  font-weight: 800;
+}
+
+nav {
+  background-color: #211c1c;
+  height: 12vh;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+a{
+  color: currentColor;
+  text-decoration: none;
+}
+
+.nav {
+  font-size: 25px;
+}
+
+
+#peca {
+  background-color: #6e4444;
+}
+
+#peca img{
+  width: 200px;
+  border-radius: 100px;
+}
+
+#peca ul li:nth-child(odd) img {
+  border: 10px ridge #7d1142;
+}
+
+#peca ul li:nth-child(even) img {
+  border: 10px groove #7d1142;
+}
+
+#sobre {
+  background-color: #41376a;
+}
+h2{
+  text-align: center;
+  padding: 30px;
+  font-size: 35px;
+}
+
+ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+li{
+  text-align: center;
+}
+#peca li p{
+  word-wrap: break-word;
+  width: 220px;
+}
+
+section > p {
+  padding: 0 10rem;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+
