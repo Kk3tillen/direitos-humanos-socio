@@ -8,7 +8,7 @@
 }
 
 body {
-  background-color: rgb(78, 7, 46);
+  background-color: rgb(170, 91, 0);
   font-family: 'Righteous', cursive;
   color: rgb(255, 255, 255);
 }
@@ -42,7 +42,7 @@ nav {
   justify-content: center;
   align-items: center;
   gap: 100px;
-  border-bottom: 2px solid #af76ff;
+  border-bottom: 2px solid #7d5211;
 }
 
 a{
@@ -56,7 +56,7 @@ a{
 
 
 #peca {
-  background-color: #6e4444;
+  background-color: #3d3225;
 }
 
 #peca img{
@@ -65,15 +65,15 @@ a{
 }
 
 #peca ul li:nth-child(odd) img {
-  border: 10px ridge #7d1142;
+  border: 10px ridge #7d5211;
 }
 
 #peca ul li:nth-child(even) img {
-  border: 10px groove #7d1142;
+  border: 10px groove #7d5211;
 }
 
 #sobre {
-  background-color: #41376a;
+  background-color: #7a7530;
 }
 h2{
   text-align: center;
