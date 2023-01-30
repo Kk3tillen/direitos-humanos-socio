@@ -60,7 +60,7 @@ a{
 }
 
 #peca img{
-  width: 200px;
+  width: 180px;
   border-radius: 100px;
 }
 
@@ -85,7 +85,7 @@ ul{
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  gap: 2rem;
+  gap: 1.5rem;
   align-items: center;
   justify-content: center;
 }
@@ -104,5 +104,18 @@ section > p {
   text-justify: inter-word;
   letter-spacing: 1px;
 }
+
+#linkroteiro{
+  background-color: #1c211e;
+  padding: 25px;
+  border-radius: 30px;
+}
+
+#peca footer {
+  display: flex;
+  padding: 25px;
+  justify-content: center;
+}
+
 
 
