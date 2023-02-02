@@ -29,11 +29,13 @@ header {
 }
 
 header > section{
+  padding: 4rem;
   height: 100%;
   width: 100%;
   background-color: #1b1a1a69;
   display: grid;
   place-items: center;
+  text-align: center;
 }
 
 h1 {
@@ -143,4 +145,44 @@ section > p {
 
 #sobre p{
   text-indent: px;
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    height: 50vh;
+  }
+
+  nav {
+    gap: 4rem;
+  }
+
+  h1 {
+    font-size: 60px;
+  }
+
+  section > p {
+    padding: 0 3rem;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  header {
+    height: 50vh;
+  }
+
+  nav {
+    gap: 2rem;
+  }
+
+  header > section {
+    padding: 0;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+
+  section > p {
+    padding: 0 3rem;
+  }
 }
