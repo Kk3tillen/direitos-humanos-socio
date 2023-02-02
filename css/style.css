@@ -18,8 +18,12 @@ header {
   display: grid;
   place-items: center;
   background-image: url("https://expresso.estadao.com.br/wp-content/uploads/2021/09/direitos-humanos-diversidade-getty.jpg");
-
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
 header > section{
   height: 100%;
   width: 100%;
