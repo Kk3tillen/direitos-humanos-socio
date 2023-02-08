@@ -73,6 +73,7 @@ body {
   background-color: rgb(170, 91, 0);
   font-family: 'Righteous', cursive;
   color: rgb(255, 255, 255);
+  position: relative;
 }
 
 header {
@@ -129,6 +130,7 @@ nav {
   height: 12vh;
   position: sticky;
   top: 0;
+  z-index: 2;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -151,6 +153,14 @@ a{
 #peca img{
   width: 180px;
   border-radius: 100px;
+}
+
+#peca ul {
+  position: relative;
+}
+
+#peca ul li {
+  position: relative;
 }
 
 #peca ul li:nth-child(odd) img {
