@@ -8,7 +8,7 @@
 }
 
 #btnMenu {
-  display: none;
+  display: grid;
   place-items: center;
   position: relative;
   text-align: left;
@@ -101,8 +101,18 @@ h1 {
   font-weight: 800;
 }
 
-nav h3 {
+#menuMobile {
   display: none;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+#menuDesktop {
+  display: flex;
+  align-items: center;
+  gap: 100px;
 }
 
 nav {
@@ -114,7 +124,6 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 100px;
   border-bottom: 2px solid #7d5211;
 }
 
@@ -242,7 +251,7 @@ section > p {
     height: 50vh;
   }
 
-  nav {
+  #menuDesktop {
     gap: 4rem;
   }
 
@@ -260,29 +269,24 @@ section > p {
     background-color: transparent;
     border: 0;
   }
-  
+
   nav.topPage h3 {
     visibility: hidden;
   }
   
-  nav h3 {
-    display: block;
+  #menuMobile {
+    display: flex;
   }
-
-  #btnMenu {
-    display: grid;
+  
+  #menuDesktop {
+    display: none;
   }
 
   nav {
     position: fixed;
-    display: flex;
     justify-content: space-between;
     padding: 1rem;
     width: 100%;
-  }
-  
-  nav a {
-    display: none;
   }
 
   header {
