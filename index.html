@@ -16,6 +16,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Direitos Humanos</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="script/index.js" defer></script>
 </head>
 
 <body>
@@ -24,12 +25,20 @@
             <h1>Direitos Humanos</h1>
         </section>
     </header>
-    <nav id="myHeader">
-        <a href="#sobre" class="nav">Sobre</a>
-
-        <a href="#peca" class="nav">Peça</a>
-
-        <a href="#fonts" class="nav">Fontes</a>
+    <nav id="myHeader" class="topPage">
+        <div id="menuMobile">
+            <h3>Direitos Humanos</h3>        
+            <button id="btnMenu">
+                <div id="iconMenu">
+                    <div id="iconMenu__burger"></div>
+                </div>
+            </button>
+        </div>
+        <div id="menuDesktop">
+            <a href="#sobre" class="nav">Sobre</a>
+            <a href="#peca" class="nav">Peça</a>
+            <a href="#fonts" class="nav">Fontes</a>
+        </div>
     </nav>
 
     <section id="sobre">
@@ -156,8 +165,6 @@
             <p>Kézia Ketillen Santos Lima</p>
             <p>Maria Francielen Barros de Menezes</p>
             <p>Fernanda Jamilly Aquino Silva</p>
-        </div>
-        <div>
             <p>Fábio Kellyton Pereira Bezerra</p>
             <p>George Fabrício Fernandes Filho</p>
         </div>
