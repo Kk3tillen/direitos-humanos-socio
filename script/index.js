@@ -9,10 +9,10 @@ function isMenuMobileShow() {
 
 window.addEventListener("scroll", () => {
     const scrollY = window.scrollY;
-    if (scrollY == lastScrollY) {
-        nav.classList.add("topPage")
+    if (scrollY > lastScrollY) {
+        nav.classList.remove("topPage")
     } else {
-        nav.classList.remove("topPage");
+        nav.classList.add("topPage");
     }
 });
 

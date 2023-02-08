@@ -101,13 +101,8 @@ h1 {
   font-weight: 800;
 }
 
-nav.topPage {
-  background-color: transparent;
-  border: 0;
-}
-
-nav.topPage h3 {
-  visibility: hidden;
+nav h3 {
+  display: none;
 }
 
 nav {
@@ -261,6 +256,19 @@ section > p {
 }
 
 @media only screen and (max-width: 420px) {
+  nav.topPage {
+    background-color: transparent;
+    border: 0;
+  }
+  
+  nav.topPage h3 {
+    visibility: hidden;
+  }
+  
+  nav h3 {
+    display: block;
+  }
+
   #btnMenu {
     display: grid;
   }
