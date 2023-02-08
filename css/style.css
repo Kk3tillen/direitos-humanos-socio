@@ -136,11 +136,22 @@ section > p {
   border-radius: 10px 10px 0 0;
   color: rgb(50, 34, 34);
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
+
+#componentes h4 {
+  margin-bottom: 1.6rem;
+}
+
+#componentes p {
+  margin-bottom: 0.6rem;
+}
+
 #componentes div{
   padding: 25px;
+  display: grid;
 }
 
 #sobre p{
@@ -148,6 +159,10 @@ section > p {
 }
 
 @media only screen and (max-width: 600px) {
+  #componentes {
+    text-align: center;
+  }
+
   header {
     height: 50vh;
   }
