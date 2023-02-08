@@ -7,6 +7,64 @@
   box-sizing: border-box;
 }
 
+#btnMenu {
+  display: none;
+  place-items: center;
+  position: relative;
+  text-align: left;
+  background-color: transparent;
+}
+
+#iconMenu {
+  position: relative;
+  background-color: transparent;
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+}
+
+#iconMenu__burger,
+#iconMenu__burger::before,
+#iconMenu__burger::after {
+  width: 24px;
+  height: 2px;
+  background-color: #fff;
+  transition: all .5s ease-in-out;
+  border-radius: 4px;
+}
+
+#iconMenu__burger::before,
+#iconMenu__burger::after {
+  content: ' ';
+  position: absolute;
+}
+
+#iconMenu__burger::before {
+  transform: translateY(-8px);
+}
+
+#iconMenu__burger::after {
+  transform: translateY(8px);
+}
+
+#btnMenu.open #iconMenu__burger {
+  background: transparent;
+  transform: translateX(-50px);
+}
+
+#btnMenu.open #iconMenu__burger::before {
+  transform: rotate(45deg) translate(35px, -35px);
+  background-color: #ba7b1c;
+}
+
+#btnMenu.open #iconMenu__burger::after {
+  transform: rotate(-45deg) translate(35px, 35px);
+  background-color: #8f893b;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -43,7 +101,17 @@ h1 {
   font-weight: 800;
 }
 
+nav.topPage {
+  background-color: transparent;
+  border: 0;
+}
+
+nav.topPage h3 {
+  visibility: hidden;
+}
+
 nav {
+  transition: all .5s ease-in-out;
   background-color: #211c1c;
   height: 12vh;
   position: sticky;
@@ -193,6 +261,22 @@ section > p {
 }
 
 @media only screen and (max-width: 420px) {
+  #btnMenu {
+    display: grid;
+  }
+
+  nav {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    width: 100%;
+  }
+  
+  nav a {
+    display: none;
+  }
+
   header {
     height: 50vh;
   }
