@@ -159,6 +159,14 @@ section > p {
 }
 
 @media only screen and (max-width: 600px) {
+  h2{
+    font-size: 30px;
+  }
+  
+  section > p {
+    font-size: 18px;
+  }
+
   #componentes {
     text-align: center;
   }
